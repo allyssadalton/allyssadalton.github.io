@@ -8,3 +8,9 @@
     align-items: center;        /* centers vertically */
     text-align: center;
 }
+
+#menu {
+    height: 20px;
+    width: 100%;
+    
+}
