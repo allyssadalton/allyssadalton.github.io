@@ -13,11 +13,11 @@
 ---
 
 #### **Name:**
-
+  Allyssa Dalton
 #### **Project/Assignment:**
-
+  Project 1
 ##### **Problem/Task:**
-
+  Create a personal site
 ##### **Development Log**
 
 - **Iteration 1:**  
