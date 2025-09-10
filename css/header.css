@@ -1,4 +1,8 @@
 #header {
     height: 200px;
     width: 100%;
+    background-color: hotpink;
+    font-family: "Brush Script MT", cursive;
+    color: white;
+    text-align: center;
 }
