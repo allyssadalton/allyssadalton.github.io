@@ -3,9 +3,11 @@
     width: 100%;
     background-color: hotpink;
     font-family: "Brush Script MT", cursive;
-    color: rgb(91, 91, 91);
+    color: white;
     display: flex;
-    align-items: center;        /* centers vertically */
+    flex-direction: column;   /* stack children vertically */
+    justify-content: center;  /* center vertically in the header */
+    align-items: center;      /* center horizontally */
     text-align: center;
 }
 
