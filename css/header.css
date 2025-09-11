@@ -5,8 +5,8 @@
     font-family: "Brush Script MT", cursive;
     color: white;
     display: flex;
-    flex-direction: column;   /* stack children vertically */
-    justify-content: center;  /* center vertically in the header */
-    align-items: center;      /* center horizontally */
+    flex-direction: column;  
+    justify-content: center; 
+    align-items: center;      
     text-align: center;
 }

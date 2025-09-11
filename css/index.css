@@ -1,6 +1,6 @@
 #index-container {
-    display: flex;           /* makes the container a flexbox */
-    align-items: flex-start; /* aligns items at the top */ 
+    display: flex;           
+    align-items: flex-start;
     gap: 20px;     
 }
 

@@ -12,11 +12,11 @@
 
 #menu ul {
     display: flex;
-    justify-content: space-evenly; /* Distributes space evenly */
-    list-style: none; /* Removes bullet points */
-    padding: 0; /* Removes default padding */
-    margin: 0; /* Removes default margin */
-    width: 100%; /* Ensures it fills the container width */
+    justify-content: space-evenly; 
+    list-style: none;
+    padding: 0; 
+    margin: 0; 
+    width: 100%; 
 }
 #menu ul li a{
     color: black;
