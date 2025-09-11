@@ -1,18 +1,18 @@
-#index-container {
+.index-container {
     display: flex;           
     align-items: flex-start;
     gap: 20px;     
     margin: 0 auto;
 }
 
-#index-container img{
+.index-container img{
     width: 25%;
     max-width: 25%;
     height: auto;
     object-fit: cover;
 }
 
-#index-container .text{
+.index-container .indextext{
     flex: 1;
 }
 
