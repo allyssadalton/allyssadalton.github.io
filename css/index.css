@@ -16,6 +16,9 @@
     width: 100%;
     color: black;
     background-color:rgb(246, 237, 160);
-    text-align: center;
+    display: flex;
+    flex-direction: row;
     text-decoration-line: none;
+    align-items: center; 
+    text-align: center;
 }
