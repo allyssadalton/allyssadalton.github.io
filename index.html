@@ -1,0 +1,61 @@
+  <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Allyssa's Personal Site</title>
+        <link rel="stylesheet" href="/css/index.css">
+    </head>
+
+    <body>
+      <!-- JS to show header -->
+      <div class="header">
+        <script>
+          fetch('/html/header.html')
+              .then(response => response.text())
+              .then(html => {
+                  document.getElementsByClassName('header')[0].innerHTML = html;
+              })
+              .catch(error => console.error('Error loading content:', error));
+        </script>
+      </div>
+      <!-- JS to show menu -->
+      <div class="menu"> 
+        <script>
+          fetch('/html/menu.html')
+              .then(response => response.text())
+              .then(html => {
+                  document.getElementsByClassName('menu')[0].innerHTML = html;
+              })
+              .catch(error => console.error('Error loading content:', error));
+        </script>
+      </div>
+
+      <div class="index-container">
+        <img src="/images/headshot.jpeg" alt="Headshot of myself">
+        <div class="indextext">
+          <h2>Welcome to my page!</h2>
+          <p>Hello, my name is Allyssa Dalton. I am currently a computer science major with a concentration 
+            in software engineering at the University of Indianapolis. I will graduate in May 2026. I am also a Business 
+            Intelligence Intern at Entegrata, a data lakehouse company for law firms. I created this site for one of my 
+            courses, GUI & Game Programming, but I intend on keeping it up to date. Using the menu, you can view my projects,
+            my experiences, and just fun things about me. In the footer of this site, I have my LinkedIn and Github linked, 
+            along with my email. I hope you're having a wonderful day.</p>
+        </div>
+      </div>
+      
+
+      <!-- JS to show footer -->
+      <footer>
+        <script>
+          fetch('/html/footer.html')
+              .then(response => response.text())
+              .then(html => {
+                  document.getElementsByTagName('footer')[0].innerHTML = html;
+              })
+              .catch(error => console.error('Error loading content:', error));
+        </script>
+      </footer>
+    </body>
+</html>
+    
