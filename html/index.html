@@ -5,18 +5,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Allyssa's Personal Site</title>
         <link rel="stylesheet" href="/css/index.css">
-        <link rel="stylesheet" href="/css/header.css">
-        <link rel="stylesheet" href="/css/menu.css">
         <link rel="stylesheet" href="/css/footer.css">
     </head>
 
     <body>
-      <!-- <div id="header">
-          <h1>Allyssa Dalton</h1>
-          <h2>Business Intelligence Intern at Entegrata</h2>
-          <h2>Computer Science Major at The University of Indianapolis</h2>
-      </div> 
-    -->
+      <!-- JS to show header -->
       <script>
         fetch('/html/header.html')
             .then(response => response.text())
@@ -26,20 +19,27 @@
             .catch(error => console.error('Error loading content:', error));
       </script>
 
-      <div id="menu">
-        <a href="html/projects.html">Projects</a>
-        <a href="html/experiences.html">Experiences and Skills</a>
-        <a href="html/funthings.html">Fun Things about Me</a>
-      </div>
+      <!-- JS to show menu -->
+      <script>
+        fetch('/html/menu.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('content-container').innerHTML = html;
+            })
+            .catch(error => console.error('Error loading content:', error));
+      </script>
 
-      <footer>
-        <hr>
-        <p>My Personal Website <br>
-          <a href="https://www.linkedin.com/in/allyssa-dalton/">LinkedIn</a>
-          <a href="https://github.com/allyssadalton">Github</a>
-        </p>
 
-      </footer>
+      <!-- JS to show footer -->
+      <script>
+        fetch('/html/footer.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('content-container').innerHTML = html;
+            })
+            .catch(error => console.error('Error loading content:', error));
+      </script>
+      
     </body>
 
 
