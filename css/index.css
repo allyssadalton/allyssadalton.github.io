@@ -1,0 +1,15 @@
+#index-container {
+    display: flex;           /* makes the container a flexbox */
+    align-items: flex-start; /* aligns items at the top */ 
+    gap: 20px;     
+}
+
+#index-container img{
+    width: 25%;
+    height: auto;
+}
+
+#index-container .text{
+    flex: 1;
+}
+
