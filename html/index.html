@@ -14,7 +14,7 @@
         fetch('/html/header.html')
             .then(response => response.text())
             .then(html => {
-                document.getElementById('content-container').innerHTML = html;
+                document.getElementsByClassName('header')[0].innerHTML = html;
             })
             .catch(error => console.error('Error loading content:', error));
       </script>
@@ -24,7 +24,7 @@
         fetch('/html/menu.html')
             .then(response => response.text())
             .then(html => {
-                document.getElementById('content-container').innerHTML = html;
+                document.getElementsByClassName('menu')[0].innerHTML = html;
             })
             .catch(error => console.error('Error loading content:', error));
       </script>
@@ -35,7 +35,7 @@
         fetch('/html/footer.html')
             .then(response => response.text())
             .then(html => {
-                document.getElementById('content-container').innerHTML = html;
+                document.getElementsByTagName('footer')[0].innerHTML = html;
             })
             .catch(error => console.error('Error loading content:', error));
       </script>
