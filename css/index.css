@@ -12,6 +12,11 @@
     object-fit: cover;
 }
 
+.index-container .indextext h2{
+    text-align: center;
+    flex: 1;
+}
+
 .index-container .indextext{
     flex: 1;
 }
