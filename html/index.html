@@ -11,11 +11,20 @@
     </head>
 
     <body>
-      <div id="header">
+      <!-- <div id="header">
           <h1>Allyssa Dalton</h1>
           <h2>Business Intelligence Intern at Entegrata</h2>
           <h2>Computer Science Major at The University of Indianapolis</h2>
-      </div>
+      </div> 
+    -->
+      <script>
+        fetch('/html/header.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('content-container').innerHTML = html;
+            })
+            .catch(error => console.error('Error loading content:', error));
+      </script>
 
       <div id="menu">
         <a href="html/projects.html">Projects</a>
@@ -32,5 +41,6 @@
 
       </footer>
     </body>
+
 
     
