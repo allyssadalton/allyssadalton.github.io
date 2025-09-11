@@ -1,23 +1,21 @@
-const images = document.querySelectorAll('.carousel-image');
-let currentIndex = 0;
+document.addEventListener("DOMContentLoaded", function () {
+  const images = document.querySelectorAll(".strip img");
 
-function showImage(index) {
-  images.forEach((img, i) => {
-    img.classList.toggle('active', i === index);
+  images.forEach(img => {
+    // Create a label for each image
+    const label = document.createElement("div");
+    label.className = "hover-label";
+    label.innerText = img.getAttribute("data-label");
+    img.parentNode.appendChild(label);
+
+    // Show label on hover
+    img.addEventListener("mouseover", function () {
+      label.style.display = "block";
+    });
+
+    // Hide label when not hovering
+    img.addEventListener("mouseout", function () {
+      label.style.display = "none";
+    });
   });
-}
-
-document.getElementById('next').addEventListener('click', () => {
-  currentIndex = (currentIndex + 1) % images.length;
-  showImage(currentIndex);
 });
-
-document.getElementById('prev').addEventListener('click', () => {
-  currentIndex = (currentIndex - 1 + images.length) % images.length;
-  showImage(currentIndex);
-});
-
-setInterval(() => {
-  currentIndex = (currentIndex + 1) % images.length;
-  showImage(currentIndex);
-}, 3000);
