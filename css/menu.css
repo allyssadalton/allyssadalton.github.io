@@ -17,6 +17,8 @@
     padding: 0; /* Removes default padding */
     margin: 0; /* Removes default margin */
     width: 100%; /* Ensures it fills the container width */
+}
+#menu ul li a{
     color: black;
     text-decoration-line: none;
 }
