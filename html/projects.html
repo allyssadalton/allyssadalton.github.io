@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Allyssa's Projects</title>
-        <link rel="stylesheet" href="/css/index.css">
+        <link rel="stylesheet" href="/css/projects.css">
     </head>
 
     <body>
@@ -30,19 +30,18 @@
               .catch(error => console.error('Error loading content:', error));
         </script>
       </div>
-      <div class="carousel">
-        <img src="images/python.jpg" class="carousel-image active" alt="Python Logo">
-        <img src="images/c.jpg" class="carousel-image" alt="C logo">
-        <img src="images/cpp.jpg" class="carousel-image" alt="C++ logo">
-        <img src="images/ts.jpg" class="carousel-image" alt="TypeScript Logo">
-        <img src="images/sql.jpg" class="carousel-image" alt="SQL Logo">
-        <img src="images/js.jpg" class="carousel-image" alt="Javascript Logo">
-        <img src="images/html.jpg" class="carousel-image" alt="HTML Logo">
-        <img src="images/css.jpg" class="carousel-image" alt="CSS Logo">
-
-        <!-- Arrows -->
-        <div class="arrow left-arrow" id="prev">❮</div>
-        <div class="arrow right-arrow" id="next">❯</div>
+      <div class="strip">
+        <div class="arrow left-arrow" id="prev"></div>
+        <img src="../images/python.png" class="strip-image" alt="Python Logo">
+        <img src="../images/c.png" class="strip-image" alt="C logo">
+        <img src="../images/cpp.png" class="strip-image" alt="C++ logo">
+        <img src="../images/typescript.png" class="strip-image" alt="TypeScript Logo">
+        <!-- <img src="../images/sql.png" class="carousel-image" alt="SQL Logo"> -->
+        <img src="../images/javascript.png" class="strip-image" alt="Javascript Logo">
+        <img src="../images/html.png" class="strip-image" alt="HTML Logo">
+        <img src="../images/css.png" class="strip-image" alt="CSS Logo">
+        <img src="../images/php.png" class="strip-image" alt="PHP Logo">
+        <div class="arrow right-arrow" id="next"></div>
       </div>
 
       <!-- JS to show footer -->
