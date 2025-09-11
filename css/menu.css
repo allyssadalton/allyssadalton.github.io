@@ -1,0 +1,11 @@
+#menu {
+    height: 20px;
+    width: 100%;
+    color: black;
+    background-color:rgb(246, 237, 160);
+    display: flex;
+    flex-direction: row;
+    text-decoration-line: none;
+    align-items: center; 
+    text-align: center;
+}

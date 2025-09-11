@@ -1,0 +1,12 @@
+#header {
+    height: 200px;
+    width: 100%;
+    background-color: hotpink;
+    font-family: "Brush Script MT", cursive;
+    color: white;
+    display: flex;
+    flex-direction: column;   /* stack children vertically */
+    justify-content: center;  /* center vertically in the header */
+    align-items: center;      /* center horizontally */
+    text-align: center;
+}
