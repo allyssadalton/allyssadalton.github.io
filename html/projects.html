@@ -1,0 +1,48 @@
+  <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Allyssa's Projects</title>
+        <link rel="stylesheet" href="/css/index.css">
+    </head>
+
+    <body>
+      <!-- JS to show header -->
+      <div class="header">
+        <script>
+          fetch('/html/header.html')
+              .then(response => response.text())
+              .then(html => {
+                  document.getElementsByClassName('header')[0].innerHTML = html;
+              })
+              .catch(error => console.error('Error loading content:', error));
+        </script>
+      </div>
+      <!-- JS to show menu -->
+      <div class="menu"> 
+        <script>
+          fetch('/html/menu.html')
+              .then(response => response.text())
+              .then(html => {
+                  document.getElementsByClassName('menu')[0].innerHTML = html;
+              })
+              .catch(error => console.error('Error loading content:', error));
+        </script>
+      </div>
+
+      
+      <!-- JS to show footer -->
+      <footer>
+        <script>
+          fetch('/html/footer.html')
+              .then(response => response.text())
+              .then(html => {
+                  document.getElementsByTagName('footer')[0].innerHTML = html;
+              })
+              .catch(error => console.error('Error loading content:', error));
+        </script>
+      </footer>
+    </body>
+</html>
+    
