@@ -49,3 +49,13 @@
   color: #333;
   width: 100%;
 }
+.extraTextHidden {
+  display: none;
+}
+.expandable {
+  margin: 10px 0;
+}
+button {
+  margin: 5px;
+  cursor: pointer;
+}
