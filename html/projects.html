@@ -42,7 +42,8 @@
         <img src="../images/php.png" class="strip-image" alt="PHP Logo" data-label="PHP">
       </div>
 
-
+      <label for="searchInput">Search:</label>
+      <input type="text" id="searchInput" placeholder="Search projects...">
       <div class="filters">
         <label for="languageFilter">Filter by Language:</label>
         <select id="languageFilter">
@@ -68,6 +69,14 @@
           <option value="CSCI310">GUI & Game Programming</option>
         </select>
       </div>
+      <label for="sortSelect">Sort by:</label>
+      <select id="sortSelect">
+          <option value="title-asc">Title A → Z</option>
+          <option value="title-desc">Title Z → A</option>
+          <option value="date-newest">Date Newest → Oldest</option>
+          <option value="date-oldest">Date Oldest → Newest</option>
+      </select>
+
 
       <div class="project-container">
         <div class="expandable" id="KSPTProject" data-course="ENGR496">
@@ -121,7 +130,6 @@
           </p>
           <button class="toggleBtn">Show More</button>
          </div>
-     
         <div class="expandable" id="AirportBaggageSimProject" data-language="C++" data-course="CSCI240">
           <h2>Airport Baggage Simulator</h2>
           <h4>December 2024</h4>
