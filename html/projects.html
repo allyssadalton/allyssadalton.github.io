@@ -42,6 +42,32 @@
         <img src="../images/php.png" class="strip-image" alt="PHP Logo" data-label="PHP">
       </div>
 
+
+      <div class="filters">
+        <label for="languageFilter">Filter by Language:</label>
+        <select id="languageFilter">
+          <option value="all">All</option>
+          <option value="Python">Python</option>
+          <option value="C">C</option>
+          <option value="C++">C++</option>
+          <option value="JavaScript">JavaScript</option>
+          <option value="HTML">HTML</option>
+          <option value="CSS">CSS</option>
+          <option value="PHP">PHP</option>
+        </select>
+
+        <label for="courseFilter">Filter by Course:</label>
+        <select id="courseFilter">
+          <option value="all">All</option>
+          <option value="ENGR198">Engineer Lab 2</option>
+          <option value="CSCI230">Comp. Arch. & Parallel Computing</option>
+          <option value="CSCI240">Data Structures & Algorithms</option>
+          <option value="CSCI340">Comp. Algorithms </option>
+          <option value="CSCI370">DB Systems</option>
+          <option value="CSCI310">GUI & Game Programming</option>
+        </select>
+      </div>
+
       <div class="project-container">
         <div class="expandable" id="KSPTProject">
           <h2>KSPT Curriculum Map</h2>
@@ -59,6 +85,11 @@
           <p class="extraTextHidden">
             This is my seventh homework in CSCI 340 (Computer Algorithms) where I learned to create graphs, 
             use Dijkstra's Shortest Path, and Bellman Ford's to create shortest paths with weights.
+            <div class="hoverTarget">Repository Access Disclaimer</div>
+            <div class="hoverText">
+              To prevent current students in this course from plagarising (per my professor's request), 
+              please request access to the repository via email.
+            </div>
           </p>
           <button class="toggleBtn">Show More</button>
         </div>
@@ -68,6 +99,11 @@
           <p class="extraTextHidden">
             This is my sixth homework in CSCI 370 (Database Systems) where I created a site & database similar to the 
             popular RateMyProfessor.
+            <div class="hoverTarget">Repository Access Disclaimer</div>
+            <div class="hoverText">
+              To prevent current students in this course from plagarising (per my professor's request), 
+              please request access to the repository via email.
+            </div>
           </p>
           <button class="toggleBtn">Show More</button>
         </div>
@@ -76,6 +112,11 @@
           <h4>Feburary 2025</h4>
           <p class="extraTextHidden">
             This is my third homework in CSCI 340 (Computer Algorithms) where I created a sudoku solver.
+            <div class="hoverTarget">Repository Access Disclaimer</div>
+            <div class="hoverText">
+              To prevent current students in this course from plagarising (per my professor's request), 
+              please request access to the repository via email.
+            </div>
           </p>
           <button class="toggleBtn">Show More</button>
         </div>
@@ -100,6 +141,7 @@
         </script>
       </footer>
       <script src="/javascript/CollapsibleTextProject.js"></script>
+      <script src="/javascript/HoverTextProject.js"></script>
      
     </body>
 </html>

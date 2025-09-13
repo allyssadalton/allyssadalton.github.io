@@ -59,3 +59,17 @@ button {
   margin: 5px;
   cursor: pointer;
 }
+.hoverText {
+  display: none;
+  margin-top: 5px;
+  font-size: 0.9rem;
+  color: #555;
+  background: #f4f4f4;
+  border: 1px solid #ddd;
+  padding: 6px;
+  border-radius: 4px;
+}
+
+.hoverTarget {
+  cursor: pointer;
+}
