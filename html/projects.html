@@ -59,7 +59,8 @@
         <label for="courseFilter">Filter by Course:</label>
         <select id="courseFilter">
           <option value="all">All</option>
-          <option value="ENGR198">Engineer Lab 2</option>
+          <option value="ENGR198">Engineering Lab 2</option>
+          <option value="ENGR496">Engineering Lab VII (Capstone)</option>
           <option value="CSCI230">Comp. Arch. & Parallel Computing</option>
           <option value="CSCI240">Data Structures & Algorithms</option>
           <option value="CSCI340">Comp. Algorithms </option>
@@ -69,17 +70,17 @@
       </div>
 
       <div class="project-container">
-        <div class="expandable" id="KSPTProject">
+        <div class="expandable" id="KSPTProject" data-course="ENGR496">
           <h2>KSPT Curriculum Map</h2>
           <h4>August 2025 - May 2026</h4>
           <button class="toggleBtn">Show More</button>
         </div>
-        <div class="expandable" id="MailboxAlertSystemProject">
+        <div class="expandable" id="MailboxAlertSystemProject" data-language="C++" data-course="ENGR198">
           <h2>Mailbox Alert System</h2>
           <h4>Janaury 2025 - May 2025</h4>
           <button class="toggleBtn">Show More</button>
         </div>
-        <div class="expandable" id="GraphingMappingProject">
+        <div class="expandable" id="GraphingMappingProject" data-language="C++" data-course="CSCI340">
           <h2>Graphing Mapping</h2>
           <h4>April 2025</h4>
           <p class="extraTextHidden">
@@ -93,7 +94,7 @@
           </p>
           <button class="toggleBtn">Show More</button>
         </div>
-        <div class="expandable" id="RateMyProfessorProject">
+        <div class="expandable" id="RateMyProfessorProject" data-language="HTML,CSS,PHP" data-course="CSCI370">
           <h2>Rate My Professor</h2>
           <h4>April 2025</h4>
           <p class="extraTextHidden">
@@ -107,7 +108,7 @@
           </p>
           <button class="toggleBtn">Show More</button>
         </div>
-         <div class="expandable" id="SudokuSolverProject">
+         <div class="expandable" id="SudokuSolverProject" data-language="C++" data-course="CSCI340">
           <h2>Sudoku Solver</h2>
           <h4>Feburary 2025</h4>
           <p class="extraTextHidden">
@@ -119,9 +120,9 @@
             </div>
           </p>
           <button class="toggleBtn">Show More</button>
-        </div>
-      </div>
-        <div class="expandable" id="AirportBaggageSimProject">
+         </div>
+     
+        <div class="expandable" id="AirportBaggageSimProject" data-language="C++" data-course="CSCI240">
           <h2>Airport Baggage Simulator</h2>
           <h4>December 2024</h4>
           <button class="toggleBtn">Show More</button>
@@ -142,6 +143,7 @@
       </footer>
       <script src="/javascript/CollapsibleTextProject.js"></script>
       <script src="/javascript/HoverTextProject.js"></script>
+      <script src="/javascript/FiltersProject.js"></script>
      
     </body>
 </html>
