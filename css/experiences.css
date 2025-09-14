@@ -1,0 +1,42 @@
+.experiences-container {
+  display: grid;
+  grid-template-columns: 4fr 1fr; /* two columns: experiences (wider), skills (narrower) */
+  gap: 20px;
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+/* Experiences span first column */
+.experiences {
+  grid-column: 1; /* stays in first column */
+  background: #f5f5f5;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Skills span second column */
+.skills {
+  grid-column: 2; /* stays in second column */
+  background: #fafafa;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.courses {
+  grid-column: 1 / -1; /* span full width */
+  grid-row: 2;         /* ensure it drops to next row */
+  background: #eaeaea;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+
+  /* new multi-column layout */
+  column-count: 3;
+  column-gap: 40px; /* spacing between columns */
+}
+
+.courses h2 {
+  column-span: all; /* make the "Courses" heading span across all columns */
+  margin-bottom: 20px;
+}
