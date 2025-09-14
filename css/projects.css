@@ -74,3 +74,48 @@ button {
   cursor: pointer;
   font-style: italic;
 }
+
+
+@media (max-width: 600px) {
+  @media (max-width: 600px) {
+  /* Make the container take full width and remove extra spacing */
+  .project-container {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 auto !important;
+    padding: 0 10px;        /* optional, to give small padding */
+    text-align: center;      /* center inline content */
+    display: block;          /* ensure flex doesn’t interfere */
+  }
+
+  /* Make each project/text element take full width and center text */
+  .project-container .expandable,
+  .project-container .hover-label,
+  .project-container .hoverText {
+    display: block;
+    width: 100% !important;
+    text-align: center;
+    margin: 5px 0;
+  }
+
+  /* Images also centered */
+  .strip {
+    display: flex;
+    justify-content: center !important;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .strip img {
+    width: 25vw;
+    height: 25vw;
+    margin: 0 auto;           /* center each image */
+    display: block;
+  }
+  html, body{
+    text-align: center;
+  }
+}

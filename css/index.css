@@ -21,3 +21,33 @@
     flex: 1;
 }
 
+
+@media (max-width: 600px) {
+    html, body{
+        margin: 0;
+        padding: 0px;
+    }
+    .index-container {
+        flex-direction: column;
+    }
+    .index-container img {
+        width: 80%;
+        max-width: 300px;
+    }
+    .index-container .indextext h2{
+        text-align: center;
+        flex: none;  
+        width: 100%;
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    .index-container .indextext{
+        flex: none;
+        width: 100%;
+        text-align: center;
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+}

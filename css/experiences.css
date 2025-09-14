@@ -40,3 +40,22 @@
   column-span: all; /* make the "Courses" heading span across all columns */
   margin-bottom: 20px;
 }
+
+/* --- MOBILE --- */
+@media (max-width: 768px) {
+  .experiences-container {
+    grid-template-columns: 1fr; /* stack vertically */
+  }
+  .experiences, .skills {
+    grid-column: 1 / -1;
+  }
+  .courses {
+    column-count: 2;
+  }
+}
+
+@media (max-width: 480px) {
+  .courses {
+    column-count: 1;
+  }
+}
