@@ -35,6 +35,16 @@
 }
 .extraTextHidden {
   display: none;
+  color: black; 
+}
+
+.extraTextHidden.show {
+  display: block;
+}
+
+.extraTextHidden a {
+  color: black;
+  text-decoration: underline; 
 }
 .expandable {
   margin: 10px 0;
