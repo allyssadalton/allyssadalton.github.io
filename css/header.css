@@ -15,7 +15,7 @@ a{
     text-decoration: none;
 }
 
-/* --- MOBILE --- */
+
 @media (max-width: 600px) {
   #header {
     height: 150px;

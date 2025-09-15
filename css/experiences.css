@@ -1,50 +1,49 @@
 .experiences-container {
   display: grid;
-  grid-template-columns: 4fr 1fr; /* two columns: experiences (wider), skills (narrower) */
+  grid-template-columns: 4fr 1fr;
   gap: 20px;
   max-width: 1200px;
   margin: 20px auto;
   padding: 20px;
 }
 
-/* Experiences span first column */
+
 .experiences {
-  grid-column: 1; /* stays in first column */
+  grid-column: 1;
   background: #f5f5f5;
   padding: 20px;
   border-radius: 10px;
 }
 
-/* Skills span second column */
 .skills {
-  grid-column: 2; /* stays in second column */
+  grid-column: 2;
   background: #fafafa;
   padding: 20px;
   border-radius: 10px;
 }
 
 .courses {
-  grid-column: 1 / -1; /* span full width */
-  grid-row: 2;         /* ensure it drops to next row */
+  grid-column: 1 / -1;
+  grid-row: 2;      
   background: #eaeaea;
   padding: 20px;
   border-radius: 10px;
   margin-top: 20px;
 
-  /* new multi-column layout */
+  
   column-count: 3;
-  column-gap: 40px; /* spacing between columns */
+  column-gap: 40px; 
 }
 
 .courses h2 {
-  column-span: all; /* make the "Courses" heading span across all columns */
+  column-span: all; 
   margin-bottom: 20px;
 }
 
 /* --- MOBILE --- */
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   .experiences-container {
-    grid-template-columns: 1fr; /* stack vertically */
+    grid-template-columns: 1fr;
   }
   .experiences, .skills {
     grid-column: 1 / -1;

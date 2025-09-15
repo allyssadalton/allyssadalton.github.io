@@ -27,7 +27,7 @@ footer ul li a{
 
 
 /* --- MOBILE --- */
-@media (max-width: 480px) {
+@media (max-width: 600px) {
     footer{
         padding-left: 20px;
         padding-right: 20px;

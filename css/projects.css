@@ -75,6 +75,10 @@ button {
   font-style: italic;
 }
 
+a {
+  color: black;
+}
+
 
 @media (max-width: 600px) {
   
