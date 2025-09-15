@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: 4fr 1fr;
   gap: 20px;
-  max-width: 1200px;
+  max-width: 900px;
   margin: 20px auto;
   padding: 20px;
 }
@@ -40,7 +40,7 @@
   margin-bottom: 20px;
 }
 
-/* --- MOBILE --- */
+
 @media (max-width: 600px) {
   .experiences-container {
     grid-template-columns: 1fr;
@@ -50,11 +50,5 @@
   }
   .courses {
     column-count: 2;
-  }
-}
-
-@media (max-width: 480px) {
-  .courses {
-    column-count: 1;
   }
 }

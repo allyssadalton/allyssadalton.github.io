@@ -1,73 +1,35 @@
 .index-container {
-    display: flex;           
-    align-items: flex-start;
-    gap: 20px;     
+    max-width: 900px;  
     margin: 0 auto;
+    border-style: groove;
+    border-color: rgb(216, 176, 216);
+    padding: 5px;
+    border-width: 15px;
 }
 
-.index-container img{
-    width: 25%;
-    max-width: 25%;
+.index-container img {
+    float: left;
+    width: 200px;        
     height: auto;
-    object-fit: cover;
+    margin-right: 20px;
+    margin-bottom: 10px; 
 }
 
-.index-container .indextext h2{
-    text-align: center;
-    flex: 1;
+.indextext {
+    /* remove overflow:hidden */
+    display: block;
 }
 
-.index-container .indextext{
-    flex: 1;
-}
-.image-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 25%; /* same as image width */
-}
-
-.image-wrapper img {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    object-fit: cover;
-}
-
-.image-caption {
-    margin-top: 8px;
-    font-size: 0.9em;
-    text-align: center;
-    color: #555;
-}
-
-@media (max-width: 600px) {
-    html, body{
-        margin: 0;
-        padding: 0px;
-    }
-    .index-container {
-        flex-direction: column;
-    }
+/* Mobile responsiveness */
+@media (max-width: 700px) {
     .index-container img {
+        float: none;
+        display: block;
+        margin: 0 auto 10px;
         width: 80%;
-        max-width: 300px;
+        max-width: 200px;
     }
-    .index-container .indextext h2{
+    .indextext {
         text-align: center;
-        flex-grow: 1;
-        width: 100%;
-        padding-left: 12px;
-        padding-right: 12px;
     }
-
-    .index-container .indextext{
-        flex: none;
-        width: 100%;
-        flex-grow: 1;
-        text-align: center;
-        padding-left: 12px;
-        padding-right: 12px;
-    }
-    
 }
